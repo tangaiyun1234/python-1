@@ -1,0 +1,26 @@
+print('——'*100)
+print('''小游戏
+作者：谭思茂\n\n''')
+while True:#死循环
+    i=int(input('请输入1~1000的数字（猜数字游戏的答案):'))#让用户输入
+    if 0!=i<0:#if判断
+        print('请输入1~1000的数!!!')
+    elif i>1000:#同上
+        print('请输入1~1000的数!!!')
+    elif 1001>i>-1:#同上
+        print('完成')
+        break#终止循环
+print('\n'*100)#换行
+while True:#死循环
+    j=int(input('请输入1~1000的数：'))#让用户输入
+    if 1000>=j>i:#if判断
+        print('大了')
+    elif -1<j<i:#同上
+        print('小了')
+    elif 0!=j<0:#同上
+        print('请输入1~1000的数!!!')
+    elif j>1000:#同上
+        print('请输入1~1000的数!!!')
+    elif j==i:#同上
+        print('答对了')
+        break#终止循环
